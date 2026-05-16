@@ -46,3 +46,22 @@ h1{margin:6px 0 12px}
 #start:active{
   transform: scale(0.97);
 }
+
+.about-memory{
+  margin-top: 16px;
+  padding: 14px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.about-memory h2{
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+
