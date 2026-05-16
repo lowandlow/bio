@@ -10,7 +10,18 @@ body{
   background: linear-gradient(180deg, #0b1f3a 0%, #000000 100%);
 }
 .container{width:360px;text-align:center}
-h1{margin:6px 0 12px}
+h1{
+  margin: 6px 0 14px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(90deg, #3498db, #9ecbff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(52,152,219,0.35);
+}
 .controls{display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:12px}
 
 #level{min-width:90px;display:inline-block;text-align:center}
