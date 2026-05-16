@@ -4,9 +4,7 @@ const strictBtn = document.getElementById('strict');
 const levelSpan = document.getElementById('level');
 const message = document.getElementById('message');
 const colors = Array.from(document.querySelectorAll('.color'));
-const infoBtn = document.getElementById('infoBtn');
-const infoModal = document.getElementById('infoModal');
-const closeInfo = document.getElementById('closeInfo');
+
 
 let sequence = [];
 let playerIndex = 0;
@@ -127,8 +125,6 @@ colors.forEach((btn, idx)=>{
   btn.addEventListener('mouseup', ()=>{ btn.classList.remove('active'); });
 });
 
-infoBtn.addEventListener('click', ()=> infoModal.classList.remove('hidden'));
-closeInfo.addEventListener('click', ()=> infoModal.classList.add('hidden'));
 
 message.textContent = 'Press Start';
 disableInput();
