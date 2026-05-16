@@ -62,20 +62,21 @@ h1{margin:6px 0 12px}
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 12px;
   text-align: left;
-  font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
   backdrop-filter: blur(6px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  font-size: 15px; /* 👈 increased text size */
+  color: rgba(255,255,255,0.9);
 }
 
 .about-memory h2{
-  margin: 0 0 10px 0;
-  font-size: 15px;
+  margin: 0 0 12px 0;
+  font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #9ecbff;
-  text-align: left;
-  border-left: 3px solid #3498db;
+  text-align: left; /* ensures left alignment */
+  border-left: 4px solid #3498db;
   padding-left: 10px;
 }
 
