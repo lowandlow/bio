@@ -1,6 +1,14 @@
 :root{--size:240px}
 *{box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#111;color:#fff}
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  margin:0;
+  color:#fff;
+  background: linear-gradient(180deg, #0b1f3a 0%, #000000 100%);
+}
 .container{width:360px;text-align:center}
 h1{margin:6px 0 12px}
 .controls{display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:12px}
@@ -20,3 +28,21 @@ h1{margin:6px 0 12px}
 #infoBtn{margin-top:12px}
 
 @media(max-width:420px){:root{--size:140px}.color{width:120px;height:120px}}
+
+#start{
+  display:block;
+  margin: 0 auto 12px auto;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #111;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+#start:active{
+  transform: scale(0.97);
+}
