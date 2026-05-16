@@ -12,10 +12,15 @@ body{
 .container{width:360px;text-align:center}
 h1{margin:6px 0 12px}
 .controls{display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:12px}
+
 #level{min-width:90px;display:inline-block;text-align:center}
+
 .pad{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
 .color{width:160px;height:160px;border-radius:12px;border:4px solid #222;outline:none;cursor:pointer;transition:transform .08s,filter .08s}
+
 .color:active{transform:scale(.98)}
+
 #c0{background:#2ecc71} /* green */
 #c1{background:#e74c3c} /* red */
 #c2{background:#f1c40f} /* yellow */
@@ -32,15 +37,18 @@ h1{margin:6px 0 12px}
 #start{
   display:block;
   margin: 0 auto 12px auto;
-  padding: 12px 28px;
+  padding: 12px 32px;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  background: #ffffff;
-  color: #111;
-  transition: transform 0.1s ease, background 0.2s ease;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(135deg, #3498db, #1d4ed8);
+  box-shadow: 0 6px 18px rgba(52,152,219,0.35);
+}
+
+#start:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(52,152,219,0.45);
 }
 
 #start:active{
@@ -75,4 +83,32 @@ h1{margin:6px 0 12px}
 .about-memory p{
   margin: 8px 0;
   color: rgba(255,255,255,0.85);
+}
+
+button{
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#strict{
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  color: #cfe6ff;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+#strict:hover{
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-1px);
+}
+
+#strict:active{
+  transform: scale(0.97);
+}
+
+button{
+  font-family: Arial, Helvetica, sans-serif;
 }
